@@ -17,19 +17,20 @@ public class Register extends AppCompatActivity {
     public void launchWelcomeScreen(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+        finish();
     }
+
     public void launchHelloScreen(View view) {
         Intent intent = new Intent(this, Hello.class);
         startActivity(intent);
+        finish();
     }
 
     public void launchFeedbackScreen(View view) {
         Intent intent = new Intent(this, Feedback.class);
         startActivity(intent);
+        finish();
     }
 
-    public void launchRegisterConfirm(View view) {
-        Intent intent = new Intent(this, RegisterConfirmation.class);
-        startActivity(intent);
-    }
+
 }

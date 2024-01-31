@@ -238,7 +238,7 @@
 
                     <Space
                         android:layout_width="20dp"
-                        android:layout_height="match_parent"
+                        android:layout_height="match_parent"></Space>
 
                     <RadioButton
                         android:layout_width="wrap_content"

@@ -14,13 +14,4 @@ public class RegisterConfirmation extends AppCompatActivity {
         setContentView(R.layout.activity_register_confirmation);
     }
 
-    public void launchRegisterScreen(View v) {
-        Intent intent = new Intent(this, Register.class);
-        startActivity(intent);
-    }
-
-    public void launchSuccessScreen(View v) {
-        Intent intent = new Intent(this, RegistrationSuccess.class);
-        startActivity(intent);
-    }
 }

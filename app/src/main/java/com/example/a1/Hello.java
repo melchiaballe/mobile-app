@@ -17,15 +17,18 @@ public class Hello extends AppCompatActivity {
     public void launchWelcomeScreen(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+        finish();
     }
 
     public void launchRegisterScreen(View view) {
         Intent intent = new Intent(this, Register.class);
         startActivity(intent);
+        finish();
     }
 
     public void launchFeedbackScreen(View view) {
         Intent intent = new Intent(this, Feedback.class);
         startActivity(intent);
+        finish();
     }
 }

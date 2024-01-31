@@ -15,8 +15,4 @@ public class RegistrationSuccess extends AppCompatActivity {
         setContentView(R.layout.activity_registration_success);
     }
 
-    public void launchWelcomeScreen(View v) {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
 }
