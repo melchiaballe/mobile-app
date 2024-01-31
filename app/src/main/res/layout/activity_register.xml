@@ -115,7 +115,7 @@
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="400dp"
+        android:layout_width="0dp"
         android:layout_height="690dp"
         android:background="#FDFDFD"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
