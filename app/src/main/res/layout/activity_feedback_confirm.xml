@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegistrationSuccess">
-
+    tools:context=".FeedbackConfirm">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
@@ -19,31 +18,29 @@
         app:layout_constraintVertical_bias="0.0">
 
         <TextView
-            android:id="@+id/header_register_success"
-            android:layout_width="144dp"
-            android:layout_height="139dp"
-            android:gravity="center"
-            android:text="This is the Register Success page"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.381" />
-
-        <Button
-            android:id="@+id/confirm_success_register"
+            android:id="@+id/header_feedback_success"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="72dp"
-            android:text="Confirm"
+            android:layout_marginTop="320dp"
+            android:gravity="center"
+            android:text="@string/feedback_success"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/confirm_success_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:onClick="launchWelcomeScreen"
+            android:text="@string/confirm"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/header_register_success"
+            app:layout_constraintTop_toBottomOf="@+id/header_feedback_success"
             app:layout_constraintVertical_bias="0.09" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

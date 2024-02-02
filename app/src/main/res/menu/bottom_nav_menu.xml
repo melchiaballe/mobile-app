@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="welcome"
+        android:icon="@drawable/baseline_assured_workload_24">
+    </item>
+
+    <item
+        android:id="@+id/hello"
+        android:title="hello"
+        android:icon="@drawable/baseline_account_box_24">
+
+    </item>
+
+    <item
+        android:id="@+id/register"
+        android:title="register"
+        android:icon="@drawable/baseline_app_registration_24">
+    </item>
+
+    <item
+        android:id="@+id/feedback"
+        android:title="feedback"
+        android:icon="@drawable/baseline_comment_bank_24">
+    </item>
+</menu>

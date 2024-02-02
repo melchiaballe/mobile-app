@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">a1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_feedback">Enter your feedback</string>
+    <string name="feedback_placeholder">Enter feedback here</string>
+    <string name="submit">Submit</string>
+    <string name="confirm">Confirm</string>
+    <string name="feedback_success">Your feedback has been sent</string>
+    <string name="hello_title">Hello page is coming soon!</string>
+    <string name="code_logo_desc">this is a code logo</string>
+    <string name="welcome_subtitle">to hackathon</string>
+    <string name="welcome">WELCOME</string>
+    <string name="team_name">Team Name</string>
+    <string name="team_level">Team level</string>
+    <string name="receive_emails">Receive Emails</string>
+    <string name="is_agree">Do you agree</string>
+    <string name="next">Next</string>
+    <string name="register_title">Register to Hackaton</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="num_0">0</string>
+    <string name="register_team_confirm_subtitle">This is to confirm the team details and proceed to adding members</string>
 </resources>

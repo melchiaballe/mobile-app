@@ -13,12 +13,15 @@
         android:theme="@style/Theme.A1"
         tools:targetApi="31">
         <activity
+            android:name=".FeedbackConfirm"
+            android:exported="false" />
+        <activity
             android:name=".RegistrationSuccess"
             android:exported="false" />
         <activity
             android:name=".RegisterConfirmation"
-            android:parentActivityName=".Register"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Register" />
         <activity
             android:name=".Feedback"
             android:exported="false" />

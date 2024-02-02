@@ -6,264 +6,185 @@
     android:layout_height="match_parent"
     tools:context=".Register">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="416dp"
-        android:layout_height="100dp"
-        android:background="#555555"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:padding="16dp">
-
-            <LinearLayout
-                android:layout_width="94dp"
-                android:layout_height="69dp"
-                android:orientation="vertical">
-
-                <ImageButton
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:contentDescription="Welcome navigation"
-                    android:onClick="launchWelcomeScreen"
-                    app:srcCompat="@drawable/baseline_assured_workload_24" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="Welcome"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="95dp"
-                android:layout_height="69dp"
-                android:orientation="vertical">
-
-                <ImageButton
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:contentDescription="Hello navigation"
-                    android:onClick="launchHelloScreen"
-                    app:srcCompat="@drawable/baseline_account_box_24" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="Hello"
-                    android:textColor="#FFFF"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="94dp"
-                android:layout_height="69dp"
-                android:orientation="vertical">
-
-                <ImageButton
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:backgroundTint="#FFEB3B"
-                    android:contentDescription="Register navigation"
-                    app:srcCompat="@drawable/baseline_app_registration_24" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="Register"
-                    android:textColor="#FFEB3B"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="95dp"
-                android:layout_height="69dp"
-                android:orientation="vertical">
-
-                <ImageButton
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:contentDescription="This is for the feedback"
-                    android:onClick="launchFeedbackScreen"
-                    app:srcCompat="@drawable/baseline_comment_bank_24" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="Feedback"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-        </LinearLayout>
-
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="0dp"
-        android:layout_height="690dp"
-        android:background="#FDFDFD"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="125dp"
-            android:layout_height="85dp"
-            android:gravity="center"
-            android:text="Register to Hackaton"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/bottom_nav"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.247" />
+            app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="launchRegisterConfirm"
-            android:text="Next"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:layout_constraintVertical_bias="0.872" />
-
-        <LinearLayout
-            android:id="@+id/linearLayout"
-            android:layout_width="0dp"
-            android:layout_height="214dp"
-            android:orientation="vertical"
-            android:padding="16dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.615">
-
-            <LinearLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginStart="15dp"
-                android:orientation="horizontal">
+                android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textView10"
+                    android:id="@+id/header_register"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Team Name"
-                    android:textSize="20sp" />
+                    android:gravity="center"
+                    android:text="@string/register_title"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.34" />
 
-                <EditText
-                    android:id="@+id/editTextText2"
+                <Button
+                    android:id="@+id/confirm_registration_button"
                     android:layout_width="wrap_content"
-                    android:layout_height="48dp"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:inputType="text"
-                    android:text="Name" />
+                    android:layout_height="wrap_content"
+                    android:onClick="launchRegisterConfirm"
+                    android:text="@string/next"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/header_register"
+                    app:layout_constraintVertical_bias="0.872" />
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginStart="15dp"
-                android:orientation="horizontal">
-
-                <TextView
-
+                <LinearLayout
+                    android:id="@+id/linearLayout"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center_vertical"
-                    android:text="Team level"
-                    android:textSize="20sp" />
+                    android:layout_height="214dp"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.615">
 
-                <SeekBar
-                    android:id="@+id/seekBar2"
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/team_name"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/team_name_edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="@string/team_name"
+                            android:inputType="text"
+                            android:textColorHint="#78909C"
+                            android:importantForAutofill="no" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical"
+                            android:text="@string/team_level"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/seekbar_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:textSize="20sp"
+                            android:text="@string/num_0" />
+
+                        <SeekBar
+                            android:id="@+id/seekbar_team_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_weight="2" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="@string/receive_emails"
+                            android:textSize="20sp" />
+
+                        <RadioGroup
+                            android:id="@+id/radio_emails"
+                            android:layout_width="191dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radio_yes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/yes"
+                                android:textSize="20sp"></RadioButton>
+
+                            <Space
+                                android:layout_width="20dp"
+                                android:layout_height="match_parent"></Space>
+
+                            <RadioButton
+                                android:id="@+id/radio_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/no"
+                                android:textSize="20sp">
+
+                            </RadioButton>
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/agree_disagree_switch"
                     android:layout_width="wrap_content"
                     android:layout_height="48dp"
-                    android:layout_weight="1" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginStart="15dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center_vertical"
-                    android:text="Receive Emails"
-                    android:textSize="20sp" />
-
-                <RadioGroup
-                    android:layout_width="191dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Yes"
-                        android:textSize="20sp"></RadioButton>
-
-                    <Space
-                        android:layout_width="20dp"
-                        android:layout_height="match_parent"></Space>
-
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="No"
-                        android:textSize="20sp">
-
-                    </RadioButton>
-                </RadioGroup>
+                    android:text="@string/is_agree"
+                    app:layout_constraintBottom_toTopOf="@+id/confirm_registration_button"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                    app:layout_constraintVertical_bias="0.73" />
 
 
-            </LinearLayout>
-        </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <Switch
-            android:id="@+id/switch1"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:text="Do you agree"
-            app:layout_constraintBottom_toTopOf="@+id/button"
+        </FrameLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-            app:layout_constraintVertical_bias="0.73" />
+            app:menu="@menu/bottom_nav_menu">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
